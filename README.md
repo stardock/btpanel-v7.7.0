@@ -46,3 +46,9 @@ chattr +i /www/server/panel/data/plugin.json
 ```
 sed -i "s|if (bind_user == 'REMOVED') {|if (bind_user == 'True') {|g" /www/server/panel/BTPanel/static/js/index.js
 ```
+
+Q&A:  
+TypeError: send_file() got an unexpected keyword argument 'add_etags'  
+```
+/www/server/panel/pyenv/bin/pip install -U Flask==2.1.2
+```
